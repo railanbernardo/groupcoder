@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "portfolio";
+  src:url("fonts/portfolio.eot");
+  src:url("fonts/portfolio.eot?#iefix") format("embedded-opentype"),
+    url("fonts/portfolio.woff") format("woff"),
+    url("fonts/portfolio.ttf") format("truetype"),
+    url("fonts/portfolio.svg#portfolio") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "portfolio" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "portfolio" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-palette:before {
+  content: "\61";
+}
+.icon-code:before {
+  content: "\62";
+}
+.icon-cog:before {
+  content: "\63";
+}
+.icon-clipboard:before {
+  content: "\66";
+}
+.icon-search:before {
+  content: "\68";
+}
+.icon-design-pencil-rule-streamline:before {
+  content: "\69";
+}
+.icon-device-desktop:before {
+  content: "\6b";
+}
+.icon-arrow-streamline-target:before {
+  content: "\6d";
+}
+.icon-clipboard-notes:before {
+  content: "\70";
+}
+.icon-graph-trend:before {
+  content: "\71";
+}
+.icon-display:before {
+  content: "\73";
+}
+.icon-book-open:before {
+  content: "\74";
+}
+.icon-thumbnails:before {
+  content: "\75";
+}
+.icon-shopping-cart:before {
+  content: "\64";
+}
+.icon-guide-dog:before {
+  content: "\65";
+}
+.icon-note-beamed:before {
+  content: "\67";
+}
+.icon-heartbeat:before {
+  content: "\6a";
+}
+.icon-atom:before {
+  content: "\6c";
+}
+.icon-camera:before {
+  content: "\6e";
+}
+.icon-angle-right:before {
+  content: "\6f";
+}
+.icon-instagram:before {
+  content: "\72";
+}
+.icon-facebook-square:before {
+  content: "\76";
+}
+.icon-youtube-play:before {
+  content: "\77";
+}
+.icon-github-square:before {
+  content: "\78";
+}
+.icon-linkedin-square:before {
+  content: "\79";
+}
+.icon-flame:before {
+  content: "\7a";
+}
+.icon-comment-discussion:before {
+  content: "\41";
+}
+.icon-twitter-alt:before {
+  content: "\42";
+}

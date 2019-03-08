@@ -1,0 +1,131 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/******
+Reset
+*******/
+ul{list-style: none;}
+a{text-decoration: none; color: #42ca8f;}
+img{border: none;}
+a img{border: none;}
+
+
+/*********
+Controlers
+**********/
+body{background: #f1f8fa;}
+.content{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+/****************
+Icones categori
+*****************/
+.categori_list li a .ferramentas{
+    background: url(../images/config.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+.categori_list li a .front-end{
+    background: url(../images/front-end.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categori_list li a .back-end{
+    background: url(../images/back-end.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categori_list li a .marketing{
+    background: url(../images/marketing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categori_list li a .cursos{
+    background: url(../images/curso.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categori_list li a .variados{
+    background: url(../images/variados.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categori_list li a .design{
+    background: url(../images/photoshop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
