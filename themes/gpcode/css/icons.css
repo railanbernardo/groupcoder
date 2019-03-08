@@ -122,3 +122,9 @@
 .icon-twitter-alt:before {
   content: "\42";
 }
+.icon-angle-double-right:before {
+  content: "\43";
+}
+.icon-angle-double-left:before {
+  content: "\44";
+}

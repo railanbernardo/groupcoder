@@ -25,19 +25,19 @@ $tpl_s = $View->Load('article-aside');
                 $getPage = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT);
                 $Pager = new Pager('index.php?page=');
                 $Pager->ExePager($getPage, 12);
-
-        $readPosts = new Read;
-        $readPosts->ExeRead("ws_posts", "ORDER BY post_status ASC, post_date DESC LIMIT :limit OFFSET :offset", "limit={$Pager->getLimit()}&offset={$Pager->getOffset()}"); 
-            
-
-            $cat = Check::CatByName('destaques');
-            $post = new Read;
-            $post->ExeRead("ws_posts", "WHERE post_status = 1 AND (post_cat_parent = :cat OR post_category = :cat) ORDER BY post_date DESC LIMIT :limit OFFSET :offset", "cat={$cat}&limit={$Pager->getLimit()}&offset={$Pager->getOffset()}");
+        
+                $readPosts = new Read;
+                $readPosts->ExeRead("ws_posts", "ORDER BY post_status ASC, post_date DESC LIMIT :limit OFFSET :offset", "limit={$Pager->getLimit()}&offset={$Pager->getOffset()}"); 
+                    
+        
+             $cat = Check::CatByName('destaques');
+             $post = new Read;
+             $post->ExeRead("ws_posts", "WHERE post_status = 1 AND (post_cat_parent = :cat OR post_category = :cat) ORDER BY post_date DESC LIMIT :limit OFFSET :offset", "cat={$cat}&limit={$Pager->getLimit()}&offset={$Pager->getOffset()}");
             if (!$post->getResult()):
                 WSErro('Desculpe, ainda não existem notícias cadastradas. Favor volte mais tarde!', WS_INFOR);
             else:
                 foreach ($post->getResult() as $noticia):
-                    $noticia['post_title'] = Check::Words($noticia['post_title'], 10);
+                    $noticia['post_title'] = Check::Words($noticia['post_title'], 8);
                     $noticia['post_content'] = Check::Words($noticia['post_content'], 15);
                     $noticia['datetime'] = date('Y-m-d', strtotime($noticia['post_date']));
                     $noticia['pubdate'] = date('d/m/Y H:i', strtotime($noticia['post_date']));
@@ -57,7 +57,7 @@ $tpl_s = $View->Load('article-aside');
                  <div class="paginator">
                 <ul class="paginators">
                 <?php
-                $Pager->ExePaginator("ws_posts", "WHERE post_status = 1 AND post_category = :cat", "cat={$cat}");
+                $Pager->ExePaginator("ws_posts");
                 echo $Pager->getPaginator();
                 ?>
                 </ul>
