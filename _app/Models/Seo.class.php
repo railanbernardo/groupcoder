@@ -67,7 +67,7 @@ class Seo {
             case 'artigo':
                 $Admin = (isset($_SESSION['userlogin']['user_level']) && $_SESSION['userlogin']['user_level'] == 3 ? true : false);
                 $Check = ($Admin ? '' : 'post_status = 1 AND');
-
+                
                 $ReadSeo->ExeRead("ws_posts", "WHERE {$Check} post_name = :link", "link={$this->Link}");
                 if (!$ReadSeo->getResult()):
                     $this->seoData = null;
@@ -75,7 +75,7 @@ class Seo {
                 else:
                     $extract = extract($ReadSeo->getResult()[0]);
                     $this->seoData = $ReadSeo->getResult()[0];
-                    $this->Data = [$post_title . ' - ' . SITENAME, $post_content, HOME . "/noticia/{$post_name}", HOME . "/uploads/{$post_cover}"];
+                    $this->Data = [$post_title . ' - ' . SITENAME, $post_content, HOME . "/artigo/{$post_name}", HOME . "/uploads/{$post_cover}"];
 
                     //post:: conta views do post
                     $ArrUpdate = ['post_views' => $post_views + 1];

@@ -64,7 +64,7 @@ endif;
                         <?= Check::Image('../uploads/' . $post_cover, $post_title, 120, 70); ?>
                     </div>
 
-                    <h1><a target="_blank" href="../noticia/<?= $post_name; ?>" title="Ver Post"><?= Check::Words($post_title, 10) ?></a></h1>
+                    <h1><a target="_blank" href="../artigo/<?= $post_name; ?>" title="Ver Post"><?= Check::Words($post_title, 10) ?></a></h1>
                     <ul class="info post_actions">
                         <li><strong>Data:</strong> <?= date('d/m/Y H:i', strtotime($post_date)); ?>Hs</li>
                         <li><a class="act_view" target="_blank" href="../noticia/<?= $post_name; ?>" title="Ver no site">Ver no site</a></li>

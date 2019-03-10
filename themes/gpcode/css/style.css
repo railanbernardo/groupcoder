@@ -295,11 +295,10 @@ main content artigo
 .box_content_artigo{
     width: 100%;
     display: flex;
-    align-items: center;
     margin: 0 15px 15px 0;
 }
 
-.box_content_artigo:nth-child(10){
+.box_content_artigo:nth-child(12){
     margin-bottom: 0;
 }
 
@@ -322,7 +321,6 @@ main content artigo
     width: 30%;
     height: auto;
     display: flex;
-    align-items: center;
     margin-right: 15px;
     border-radius: 2px;
     overflow: hidden;
@@ -498,7 +496,6 @@ Main aside
 .box_artigos_v .box_img_v{
     width: 65%;
     display: flex;
-    align-items: center;
     height: auto;
     overflow: hidden;
     border-radius: 2px;
@@ -702,6 +699,76 @@ box img artigo content
 
 .box_artigo_content_desc p a:hover{
     text-decoration: underline;
+}
+
+
+/************
+Recomendadas
+*************/
+.relacionado{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.relacionado > header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: #3b474d;
+    margin-bottom: 15px;
+}
+
+.relacionado header h1{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.relacionado .box_relacionadas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.relacionado .box_relacionadas .title_header h1{
+    font-size: 1.1em !important;
+}
+
+/******
+404
+******/
+.error_404{
+    width: 100%;
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 1px 3px 15px rgba(0,0,0,.1);
+}
+
+.header_404{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_404 h1{
+    font-size: 6em;
+    font-weight: 600;
+    color: #dd4b39;
+    padding: 20px 0;
+}
+
+
+.error_404 h2{
+    font-size: 1em;
+    font-weight: 700;
+    color: #474649;
+    text-align: center;
 }
 
 /***********
